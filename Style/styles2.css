@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5fff0;
+    background-image: url('fundo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.container {
+    background: transparent;
+    padding: 20px;
+    width: 350px;
+    position: relative;
+}
+
+.title {
+    color: #23423d;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #23423d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #23423d;
+    margin-bottom: 5px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #23423d;
+    border-radius: 25px;
+    font-size: 16px;
+    background: rgba(0, 128, 0, 0.2);
+    text-align: left;
+    color: #23423d;
+}
+
+.send-code-button {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.send-code-button:hover {
+    background: #45a049;
+}
+
+.resend-text {
+    font-style: italic;
+    color: #23423d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto; 
+    width: 120px; 
+    height: auto; 
+}
