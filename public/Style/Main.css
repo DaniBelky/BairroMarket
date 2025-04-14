@@ -1,0 +1,145 @@
+* {
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #23423d;
+    font-size: 15px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #83a572;
+    background-image: url('../img/Fundo2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgba(0, 128, 0, 0.2) inset !important;
+    -webkit-text-fill-color: #23423d !important;
+    font-weight: bold;
+}
+
+.Container {
+    background: transparent;
+    padding: 20px;
+    width: 350px;
+    position: relative;
+}
+
+
+.input-container {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #1f362b;
+    border-radius: 25px;
+    font-size: 16px;
+    background: rgba(0, 128, 0, 0.2);
+    text-align: left;
+    color: #23423d;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #1f362b;
+    border-radius: 25px;
+    font-size: 16px;
+    background: rgba(0, 128, 0, 0.2);
+    text-align: left;
+    color: #23423d;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #1f362b;
+    margin-bottom: 4px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+a {
+    font-size: 11px;
+    color: #46665f;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 23px;
+    padding-top: 1px;
+}
+
+
+.facebook {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.2s ease;
+    margin-bottom: 40px;
+}
+
+.google {
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+    transition: transform 0.2s ease;
+    margin-bottom: 40px;
+}
+
+.google:hover,
+.facebook:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.button {
+    background: transparent;
+    color: #23423d;
+    padding: 10px;
+    border: 2px solid #23423d;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 10px;
+}
+
+.button:hover {
+    background: #4c8b54;
+    color: white;
+}
+

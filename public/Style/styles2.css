@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #83a572;
+    background-image: url('../img/Fundo2.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.container {
+    background: transparent;
+    padding: 20px;
+    width: 350px;
+    position: relative;
+    padding-left: 0;
+    
+}
+
+.title {
+    color: #23423d;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: #23423d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    color: #23423d;
+    margin-bottom: 5px;
+}
+
+.email-input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #23423d;
+    border-radius: 25px;
+    font-size: 16px;
+    background: rgba(0, 128, 0, 0.2);
+    text-align: left;
+    color: #23423d;
+    margin-right: 200px;
+}
+
+.send-code-button {
+    background: transparent;
+    color: #23423d;
+    padding: 10px;
+    border: 2px solid #23423d;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 10px;
+    margin-left: 110px;
+}
+
+.send-code-button:hover {
+    background: #4c8b54;
+    color: white;
+}
+
+
+.resend-text {
+    font-style: italic;
+    color: #23423d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto; 
+    width: 120px; 
+    height: auto; 
+}
