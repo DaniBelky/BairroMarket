@@ -114,13 +114,13 @@ input, select, textarea {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .checkbox-item {
     display: flex;
     align-items: center; 
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #1f362b;
     margin-bottom: 4px;
     line-height: 1; 
