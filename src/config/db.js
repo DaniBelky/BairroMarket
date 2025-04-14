@@ -1,8 +1,9 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('marketplace', 'root', 'senac', {
+const sequelize = new Sequelize('marketplace', 'root', '', {
     host: 'localhost',
     dialect: 'mysql',
+    port: 3307
   });
   
   const testConnection = async () => {

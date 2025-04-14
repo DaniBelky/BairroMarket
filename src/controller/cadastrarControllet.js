@@ -1,5 +1,6 @@
+
 document.getElementById('formCadastro').addEventListener('submit', async function (e) {
-    e.preventDefault(); // Impede o reload
+    e.preventDefault(); 
 
     const name = document.getElementById('nome').value.trim();
     const email = document.getElementById('email').value.trim();

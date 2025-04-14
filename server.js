@@ -1,11 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const userRoutes = require('./public/routes/userRoutes');
+const userRoutes = require('./src/routes/userRoutes');
 const path = require('path');
-const sequelize = require(path.join(__dirname, 'public', 'config', 'db'));
+const sequelize = require(path.join(__dirname, 'src', 'config', 'db'));
 const open = require('open').default; 
-const authRoutes = require('./public/routes/authRouter');  // Mantenha apenas esta linha
+const authRoutes = require('./src/routes/authRouter');  // Mantenha apenas esta linha
 
 dotenv.config();
 
@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 app.use(express.json());
 
-app.use('/controllers', express.static(path.join(__dirname, 'public', 'Controller', 'cadastrarControllet')));
+app.use('/controllers', express.static(path.join(__dirname, 'src', 'controller', 'cadastrarControllet')));
 
 app.get('/Email.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Email.html'));
