@@ -5,7 +5,7 @@ const userRoutes = require('./src/routes/userRoutes');
 const path = require('path');
 const sequelize = require(path.join(__dirname, 'src', 'config', 'db'));
 const open = require('open').default; 
-const authRoutes = require('./src/routes/authRouter');  // Mantenha apenas esta linha
+const authRoutes = require('./src/routes/authRouter');  
 
 dotenv.config();
 
@@ -23,7 +23,7 @@ app.get('/Email.html', (req, res) => {
 });
 
 // Não precisa importar authRouter duas vezes
-app.use('/api/auth', authRoutes);  // Aqui está correto
+app.use('/api/auth', authRoutes);  
 
 // Rota para a página Cadastrar.html
 app.get('/Cadastrar.html', (req, res) => {
@@ -41,3 +41,6 @@ sequelize.sync().then(() => {
 }).catch((error) => {
   console.error('Erro ao sincronizar o banco de dados:', error);
 });
+
+
+app.use('/src', express.static(path.join(__dirname, 'src')));
