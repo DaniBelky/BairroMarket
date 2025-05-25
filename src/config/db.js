@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
-//sequerlize = biblioteca ORM
-const sequelize = new Sequelize('marketplace', 'root', '12345', {
+
+const sequelize = new Sequelize('marketplace', 'root', '', {
     host: 'localhost',
     dialect: 'mysql',
     port: 3307

@@ -22,7 +22,8 @@ app.get('/Email.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Email.html'));
 });
 
-app.use('/api/auth', authRoutes);
+// Não precisa importar authRouter duas vezes
+app.use('/api/auth', authRoutes);  // Aqui está correto
 
 app.get('/Cadastrar.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'Cadastrar.html'));
@@ -39,5 +40,8 @@ sequelize.sync().then(() => {
 }).catch((error) => {
   console.error('Erro ao sincronizar o banco de dados:', error);
 });
+
+
+app.use('/src', express.static(path.join(__dirname, 'src')));
 
 app.use('/src', express.static(path.join(__dirname, 'src')));
