@@ -11,10 +11,12 @@
         <h1 class="title"> Recuperação de Login</h1>
         <p>Digite seu e-mail, enviaremos um código de 6 dígitos para você</p>
         <label for="email">E-mail</label>
-        <input type="email" id="email" class="email-input" placeholder="E-mail">
-        <button class="send-code-button" src="RecuperaSenha.html" onclick="window.location.href='RecuperarSenha.html'">Enviar Código</button>
-        <p class="resend-text"><em>Reenviar código em 01:59 minutos</em></p>
+        <input type="email" id="email" class="email-input" placeholder="E-mail" required>
+        <button class="send-code-button" type="button">Enviar Código</button>
+        <p class="resend-text"><em>Reenviar código em 02:00 minutos</em></p>
         <img src="img/logo.png" alt="Logo" class="logo">
     </div>
+    
+    <script src="FrontJS/EmailRecovery.js"></script>
 </body>
 </html>
